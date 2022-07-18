@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문화포털_클론코딩</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./common.css">
+    <script>
+        $(function(){
+            $('.ham').click(function(){
+                $('nav').slideToggle()
+            })
+            $('.gnb>li').click(function(){
+                $(this).find('.sub').slideToggle()
+            })
+            $(window).resize(function(){
+                let winWid = $(window).width();
+                if(winWid>790){
+                    $('nav').css('display','block')
+                }else{$('nav').css('display','none')}
+            })
+        })
+    </script>
+</head>
+<body>
+    <header class="hd">
+        <h1><img src="./img/header/header_logo.png" alt=""></h1>
+        <div class="i_box"><input type="text" placeholder="다양한 문화정보를 검색 해보세요."><button><i class="fa-solid fa-magnifying-glass fa-2x"></i></button></div>
+        <div class="h_icon">
+            <i class="fa-solid fa-user fa-2x"></i>
+            <i class="fa-solid fa-id-card fa-2x"></i>
+        </div>
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="#">문화체험</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">집콕문화생활</a>
+                        </li>
+                        <li>
+                            <a href="#">한눈에 보는 문화정보</a>
+                        </li>
+                        <li>
+                            <a href="#">문화릴레이티켓</a>
+                        </li>
+                        <li>
+                            <a href="#">문화공간,단체</a>
+                        </li>
+                        <li>
+                            <a href="#">문화SNS지도</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문화공감</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">문화TV</a>
+                        </li>
+                        <li>
+                            <a href="#">공감리포트</a>
+                        </li>
+                        <li>
+                            <a href="#">카드뉴스</a>
+                        </li>
+                        <li>
+                            <a href="#">웹진</a>
+                        </li>
+                        <li>
+                            <a href="#">문화캘린더</a>
+                        </li>
+                        <li>
+                            <a href="#">문화마루</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문화지식</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">전통문양</a>
+                        </li>
+                        <li>
+                            <a href="#">정책뉴스</a>
+                        </li>
+                        <li>
+                            <a href="#">연구교육자료</a>
+                        </li>
+                        <li>
+                            <a href="#">예술지식백과</a>
+                        </li>
+                        <li>
+                            <a href="#">실감형콘텐츠</a>
+                        </li>
+                        <li>
+                            <a href="#">문화유물</a>
+                        </li>
+                        <li>
+                            <a href="#">도서</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문화알리미</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">문화정보분석</a>
+                        </li>
+                        <li>
+                            <a href="#">채용자원봉사모집</a>
+                        </li>
+                        <li>
+                            <a href="#">문화이벤트</a>
+                        </li>
+                        <li>
+                            <a href="#">문화지원사업</a>
+                        </li>
+                        <li>
+                            <a href="#">문화포털API</a>
+                        </li>
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+        <div class="ham"><i class="fa-solid fa-bars fa-2x"></i></div>
+    </header>
+    <section>
+
+    </section>
+</body>
+</html>
