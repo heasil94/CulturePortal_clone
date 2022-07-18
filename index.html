@@ -20,7 +20,9 @@
                 let winWid = $(window).width();
                 if(winWid>790){
                     $('nav').css('display','block')
-                }else{$('nav').css('display','none')}
+                    $('.sub').css('display','flex')
+                }else{$('nav').css('display','none')
+                $('.sub').css('display','none')}
             })
         })
     </script>
