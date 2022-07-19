@@ -19,13 +19,15 @@ a {
 
 body {
     width: 100%;
-    max-width: 1280px;
-    margin: auto;
     overflow: hidden;
 }
-
+.inner{
+    margin: auto;
+    max-width: 1280px;
+}
 
 /* 해더 디자인 시작 */
+header{height: 142px;}
 .hd {
     position: fixed;
     display: flex;
@@ -34,9 +36,10 @@ body {
     flex-wrap: wrap;
     height: 120px;
     padding: 2rem;
-    width: 100%;
     max-width: 1280px;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10000;
 }
 
 .hd nav {
@@ -57,11 +60,12 @@ body {
     border-radius: 5px;
     border: 1px solid #eee;
     outline: none;
+    transition: .5s;
 }
 
 .hd .i_box input:focus {
-    background-color: #f9f5ea;
-    border: 2px solid #eee;
+    background-image: url(./img/pt1.png);
+    font-weight: 600;
 }
 
 .hd .i_box input:focus::placeholder {
@@ -92,12 +96,13 @@ body {
     transform: translateX(-50%);
     font-size: 20px;
     font-weight: 600;
-    transition: .5s;
 }
 
 .gnb>li>a {
     display: block;
     padding: 10px 0;
+    border: 5px solid transparent;
+    transition: .5s;
 }
 
 .h_icon i {
@@ -117,16 +122,20 @@ body {
         bottom: 0;
         left: -120%;
         height: 1px;
-        background-color: #eee;
+        background-color: white;
+        border-bottom: 1px solid #eee;
         transition: .5s;
     }
     .gnb:hover::after{
+        height: 50px;
         bottom: -50px;
     }
     .gnb>li:hover> .sub {
         height: 50px;
     }
-
+    .gnb>li:hover>a{
+        border-bottom: 5px solid black;
+    }
 
     .sub {
         position: absolute;
@@ -140,6 +149,7 @@ body {
         font-weight: 500;
         overflow: hidden;
         transition: .5s;
+        z-index: 100;
     }
     
     .sub >li{padding: 1rem 0;}
@@ -159,6 +169,8 @@ body {
         height: 100vh;
         left: 0;
         top: 120px;
+        z-index: 1000;
+        background-color: white;
     }
 
     .gnb {
@@ -243,3 +255,38 @@ body {
         width: 60%;
     }
 }
+
+/* 헤더 (반응형) 작업 끝. */
+
+/* Section1 작업 시작 */
+.sec1{padding: 80px 0 120px;border: 1px solid red;}
+.sec1 .inner{
+    position: relative;
+    max-width: 1280px;
+    margin: auto;
+    width: 50%;
+}
+.swiper-slide > div{position: absolute;top: 100%;}
+.swiper-slide > div > h2{padding: 10px 0;}
+.sec1 img {width: 100%;}
+.sec1>.inner>i {
+    position: absolute;
+    padding: 50px 0;
+    font-size: 30px;
+    right: 30px;
+    transform: rotateX(160deg);
+    perspective: 100px;
+    transition: .5s;
+    }
+.swiper:hover~i{
+    transform: rotateY(180deg);
+}
+@media(max-width:790px){
+    .sec1 .inner{
+        width: 75%;
+    }
+}
+
+/* Section1 (반응형) 작업 끝 */
+
+/* Section2 작업 시작 */
