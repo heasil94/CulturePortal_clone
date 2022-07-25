@@ -32,6 +32,12 @@
                     $('.sub').css('display', 'none')
                 }
             })
+            $('.ip_box3 button').click(function(){
+                $(this).toggleClass('on')
+            })
+            $('.ip_box4 button').click(function(){
+                $(this).toggleClass('on')
+            })
         })
     </script>
 </head>
@@ -152,6 +158,13 @@
             <div class="swiper slide1">
                 <ul class="slide1_con swiper-wrapper">
                     <li class="swiper-slide">
+                        <img src="./img/section1/banner_n.png" alt="배너1">
+                        <div>
+                            <h2>2022년 제1회 문화체육관광 디지털혁신 포럼 유튜브 생중계(7.22(금)13:10~15:10)</h2>
+                            <span>2022-06-23(목)~2022-07-31(일)</span>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
                         <img src="./img/section1/banner_1.jpg" alt="배너1">
                         <div>
                             <h2>제10회 문화데이터 활용 경진대회(6.22~7.31)</h2>
@@ -172,13 +185,6 @@
                             <span>2022-07-01(목)~2022-08-31(일)</span>
                         </div>
                     </li>
-                    <li class="swiper-slide">
-                        <img src="./img/section1/banner_4.png" alt="배너4">
-                        <div>
-                            <h2>여름아!미래를 부탁해!</h2>
-                            <span>2022-07-4(목)~2022-07-17(일)</span>
-                        </div>
-                    </li>
                 </ul>
                 <div class="swiper-pagination"></div>
             </div>
@@ -188,21 +194,153 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script>
             var swiper = new Swiper(".slide1", {
-              effect: "cube",
-              grabCursor: true,
-              loop: true,
-              pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-              cubeEffect: {
-                shadow: true,
-                slideShadows: false,
-                shadowOffset: 1,
-                shadowScale: 0.9,
-              },
+                effect: "cube",
+                grabCursor: true,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                cubeEffect: {
+                    shadow: true,
+                    slideShadows: false,
+                    shadowOffset: 1,
+                    shadowScale: 0.9,
+                },
             });
-          </script>
+        </script>
+    </section>
+    <section class="sec2">
+        <div class="inner">
+            <h2>한눈에 보는 문화정보 <span>지역과 일상에서 문화를 누리는 생활문화 시대,문화정보를 찾아보세요.</span></h2>
+            <div class="ip_con">
+                <ul class="ip_list">
+                    <li>
+                        <h3>주제별</h3>
+                        <div class="ip_box1">
+                            <input type="checkbox" class="chkbox" id="s1_1"><label for="s1_1"><i></i><span>문화예술</span></label>
+                            <input type="checkbox" class="chkbox" id="s1_2"><label for="s1_2"><i></i><span>문화유산</span></label>
+                            <input type="checkbox" class="chkbox" id="s1_3"><label for="s1_3"><i></i><span>문화산업</span></label>
+                            <input type="checkbox" class="chkbox" id="s1_4"><label for="s1_4"><i></i><span>문화생활</span></label>
+                            <input type="checkbox" class="chkbox" id="s1_5"><label for="s1_5"><i></i><span>관광</span></label>
+                            <input type="checkbox" class="chkbox" id="s1_6"><label for="s1_6"><i></i><span>체육</span></label>
+                            <input type="checkbox" class="chkbox" id="s1_7"><label for="s1_7"><i></i><span>도서</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>분야별</h3>
+                        <div class="ip_box2">
+                            <input type="checkbox" class="chkbox" id="s2_1"><label for="s2_1"><i></i><span>공연/전시</span></label>
+                            <input type="checkbox" class="chkbox" id="s2_2"><label for="s2_2"><i></i><span>행사/축제</span></label>
+                            <input type="checkbox" class="chkbox" id="s2_3"><label for="s2_3"><i></i><span>교육/체험</span></label>
+                            <input type="checkbox" class="chkbox" id="s2_4"><label for="s2_4"><i></i><span>관광</span></label>
+                            <input type="checkbox" class="chkbox" id="s2_5"><label for="s2_5"><i></i><span>체육</span></label>
+                            <input type="checkbox" class="chkbox" id="s2_6"><label for="s2_6"><i></i><span>도서</span></label>
+                            <input type="checkbox" class="chkbox" id="s2_7"><label for="s2_7"><i></i><span>봉사/교류</span></label>
+                            <input type="checkbox" class="chkbox" id="s2_8"><label for="s2_8"><i></i><span>뉴스/지식</span></label>
+                            <input type="checkbox" class="chkbox" id="s2_9"><label for="s2_9"><i></i><span>자격/증명</span></label>
+                            <input type="checkbox" class="chkbox" id="s2_10"><label for="s2_10"><i></i><span>대관/대여</span></label>
+                            <input type="checkbox" class="chkbox" id="s2_11"><label for="s2_11"><i></i><span>연구/자료</span></label>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>대상별</h3>
+                        <div class="ip_box3">
+                            <div>
+                                <button class="btn1">
+                                    <i></i>
+                                    <span>연령</span>
+                                </button>
+                                <div class="box3_ip">
+                                    <div class="box3_ip_con"><input type="checkbox" id="s3_1"><label for="s3_1">어린이</label></div>
+                                    <div class="box3_ip_con"><input type="checkbox" id="s3_2"><label for="s3_2">청소년</label></div>
+                                    <div class="box3_ip_con"><input type="checkbox" id="s3_3"><label for="s3_3">성인</label></div>
+                                    <div class="box3_ip_con"><input type="checkbox" id="s3_4"><label for="s3_4">어르신</label></div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn2">
+                                    <i></i>
+                                    <span>다양성</span>
+                                </button>
+                                <div class="box3_ip">
+                                    <div class="box3_ip_con"><input type="checkbox" id="s3_5"><label for="s3_5">다문화</label></div>
+                                    <div class="box3_ip_con"><input type="checkbox" id="s3_6"><label for="s3_6">장애인</label></div>
+                                    <div class="box3_ip_con"><input type="checkbox" id="s3_7"><label for="s3_7">외국인</label></div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn3">
+                                    <i></i>
+                                    <span>직업</span>
+                                </button>
+                                <div class="box3_ip">
+                                    <div class="box3_ip_con"><input type="checkbox" id="s3_8"><label for="s3_8">예술인</label></div>
+                                    <div class="box3_ip_con"><input type="checkbox" id="s3_9"><label for="s3_9">교사</label></div>
+                                    <div class="box3_ip_con"><input type="checkbox" id="s3_10"><label for="s3_10">운동선수</label></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>비용별</h3>
+                        <div class="ip_box4">
+                            <div>
+                                <button class="btn1">
+                                    <i></i>
+                                    <span>무료</span>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn2">
+                                    <i></i>
+                                    <span>유료</span>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn3">
+                                    <i></i>
+                                    <span>할인</span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="p_list">
+                <p>지금 찾고계시는 문화생활서비스의 검색결과가 총<span>2845건</span>이 있습니다.</p>
+                <div class="result_con">
+                    <ul class="result">
+                        <li>
+                            <span>인천광역시교육청평생학습관(문화예술팀)</span>
+                            <h3>캘리, 인천에서 꽃피다 - KCCA 캘리 축제</h3>
+                            <img src="./img/section2/r1.jpg" alt="소팅결과이미지">
+                        </li>
+                        <li>
+                            <span>인천광역시교육청평생학습관(문화예술팀)</span>
+                            <h3>이명지 사진전 The sea</h3>
+                            <img src="./img/section2/r2.jpg" alt="소팅결과이미지">
+                        </li>
+                        <li>
+                            <span>한국문화예술위원회</span>
+                            <h3>2022 아시테지 국제여름축제 &lt;스웨덴_네네네&gt;</h3>
+                            <img src="./img/section2/r3.jpg" alt="소팅결과이미지">
+                        </li>
+                        <li>
+                            <span>국립극장</span>
+                            <h3>지혜리 오케스트라 &lt;너나:음양&gt;</h3>
+                            <img src="./img/section2/r4.jpg" alt="소팅결과이미지">
+                        </li>
+                        <li>
+                            <span>장흥문화예술회관(주관) , 한국문화예술회관연합회(KoCACA)</span>
+                            <h3>뮤지컬 앤 더 넘버 [장흥]</h3>
+                            <img src="./img/section2/r5.jpg" alt="소팅결과이미지">
+                        </li>
+                    </ul>
+                </div>
+                <button>더보기+</button>
+            </div>
+        </div>
     </section>
 </body>
 
